@@ -17,7 +17,7 @@ sensor = UltrasonicSensor(Port.S1)
 wheelDiam = 56
 wheelSpace = 150
 robot = DriveBase(motorLeft, motorRight, wheelDiam, wheelSpace)
-f = open('distance_data.dat','w')
+f = open('distance_data.csv','w')
 t = 0
 while t < 10000:
     sensorValue = sensor.distance()
